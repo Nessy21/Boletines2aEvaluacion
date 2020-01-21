@@ -4,17 +4,15 @@ import java.time.temporal.ChronoUnit;
 
 	public class Persona {
 	
-			// campos
+		// campos //
+		
 			public String nombre;
 			public String apellidos;
 			public int estatura;
 			public LocalDate fechaNac;
 			public long edad;
-		
 
-
-
-		//métodos
+		//métodos//
 
 	public void mostrarDatos() {
 			System.out.println(nombre);
@@ -31,17 +29,21 @@ import java.time.temporal.ChronoUnit;
 		Long edad = ChronoUnit.YEARS.between(fechaNac, LocalDate.now());
 		System.out.println(edad + " años");
 		return edad;
-	}//obtenerEdad
+	}//obtenerEdad 
 
 
-//constructores
+
+		//constructores//
 	
-public Persona (String nom, String apell, LocalDate fechNac ){
-	nombre=nom;
-	apellidos=apell;
-	fechaNac= fechNac;
-}
-public Persona () {}//vacio que es el por defecto, en cuanto haces un constructor el por defecto desaparece.
+	public Persona (String nom, String apell, LocalDate fechNac ){
+		nombre=nom;
+		apellidos=apell;
+		fechaNac= fechNac;
+	}
+	public Persona () {}//vacio que es el por defecto, en cuanto haces un constructor el por defecto desaparece.
 
-}//persona
+	
+	
+	
+	}//persona
 

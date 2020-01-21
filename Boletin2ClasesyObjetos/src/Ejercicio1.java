@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Ejercicio1 {
 
@@ -46,6 +47,22 @@ public class Ejercicio1 {
 			p6.estatura=175;
 			p6.mostrarDatos();
 			
-	}
-
-}
+		//Crear un método que recibiendo un array de Personas devuelva los datos de la persona de mayor edad. 			
+			Persona [] arrayP = {p1, p2, p3, p4, p5, p6};
+			for (Persona p:arrayP) {//for each
+				Persona pMayorEdad ;
+				//p.obtenerEdad();	//muestra las edades de todos los p FALTA MOSTRAR MAYOR
+				if (p.obtenerEdad() > pMayorEdad) {
+					pMayorEdad = p.obtenerEdad() ;
+		
+				}
+			
+		} 
+		
+			
+			
+			
+	}//main
+		
+		
+}//class
