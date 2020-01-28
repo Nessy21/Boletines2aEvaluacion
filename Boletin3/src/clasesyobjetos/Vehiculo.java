@@ -33,11 +33,11 @@ public class Vehiculo {
 		System.out.println(velocidadMaxima + " km/h");
 	}//mostrarDatos
 	
-	public String toString() {
+	/*public String toString( String dni, String nombre) {
 		
-		
+		String mensaje= "El conductor de este vehículo con dni: "+dni+ " es nombre " +nombre;
 		
 		return mensaje;
-	}
+	}*/
 	
 }

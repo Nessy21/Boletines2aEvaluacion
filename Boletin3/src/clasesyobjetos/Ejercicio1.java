@@ -9,7 +9,7 @@ public class Ejercicio1 {
 	
 		c1.setConductor(con1); 
 		c1.mostrarDatos();
-		
+		c1.toString(con1);
 		
 		Remolque r1 = new Remolque ();//por utilizar contructor vacío
 		r1.longitud=300;

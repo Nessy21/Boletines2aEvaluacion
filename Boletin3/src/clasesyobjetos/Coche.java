@@ -19,5 +19,12 @@ public class Coche extends Vehiculo{
 		System.out.println(numeroPlazas);
 		super.mostrarDatos(); // examen fijo :D 
 	}
+
+	public void toString(Conductor con1) {
+		String mensaje= "El conductor de este vehículo es: " + con1;
+		System.out.println(mensaje);
+		
+		
+	}
 	
 }
