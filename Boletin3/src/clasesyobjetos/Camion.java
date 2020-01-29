@@ -22,8 +22,8 @@ public class Camion extends Vehiculo{
 	
 	public void mostrarDatos() {
 		System.out.println(altura);
-
-		
+		super.mostrarDatos();
+		System.out.println(remolque.toString());
 	}//mostrarDatos
 
 	

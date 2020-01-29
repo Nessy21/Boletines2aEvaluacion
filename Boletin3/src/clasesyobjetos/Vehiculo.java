@@ -31,13 +31,7 @@ public class Vehiculo {
 		System.out.println(matricula);
 		System.out.println(tipo);
 		System.out.println(velocidadMaxima + " km/h");
+		System.out.println(conductor.toString());
 	}//mostrarDatos
-	
-	/*public String toString( String dni, String nombre) {
-		
-		String mensaje= "El conductor de este vehículo con dni: "+dni+ " es nombre " +nombre;
-		
-		return mensaje;
-	}*/
 	
 }
