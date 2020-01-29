@@ -18,12 +18,17 @@ public class Ejercicio1 {
 		cami1.setAltura(210);
 		cami1.setConductor(con1);
 		cami1.mostrarDatos();
-		
-		
-		//apartado 4 -> método 
-		
-		
-		
+	
+		imprimirPolimorfismo(cami1);
+	}
+	
+	
+	//apartado 4 -> método 
+	
+	public void imprimirPolimorfismo (Vehiculo v1) {
+	
+		v1.mostrarDatos();
 		
 	}
+	
 }
