@@ -15,7 +15,9 @@ public class Triangulo extends Figura{
 	
 	@Override
 	protected float calcularArea() {
-	
+		float area=0;
+		
+		
 		return area;
 	}
 
