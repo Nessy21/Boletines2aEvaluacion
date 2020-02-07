@@ -20,15 +20,20 @@ public class Ejercicio1 {
 		cami1.mostrarDatos();
 	
 		imprimirPolimorfismo(cami1);
+		
+		Camion cami2 = new Camion ("3123SDF", "camion", 90, r1);//creo un camion nuevo
+		cami2.setAltura(210);
+		cami2.setConductor(con1);
+		cami2.mostrarDatos();//imprime datos de conductor también
+		
 	}
-	
 	
 	//apartado 4 -> método 
 	
-	public void imprimirPolimorfismo (Vehiculo v1) {
+	public static void imprimirPolimorfismo (Vehiculo v1) {
 	
 		v1.mostrarDatos();
 		
-	}
+	}//lo pones estatico para poder llamar en el main.
 	
 }

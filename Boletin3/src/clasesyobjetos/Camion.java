@@ -10,7 +10,7 @@ public class Camion extends Vehiculo{
 		this.setTipo(tipo);
 		this.setVelocidadMaxima(velocidadMaxima);
 		this.setRemolque(remolque);
-	}
+ 	}
 	
 	public void setAltura (int altura) {
 		this.altura = altura;
@@ -25,6 +25,17 @@ public class Camion extends Vehiculo{
 		super.mostrarDatos();
 		System.out.println(remolque.toString());
 	}//mostrarDatos
+	
+	//constructor
+	
+	public Camion (String matri, String tip, int velMax, int alt) {
+		//super(matri,tip,velMax);
+		super();//se invoca al constructor
+		super.mostrarDatos();//no sé muy bien para qué
+		this.setAltura(alt);
+	}
+	
+
 
 	
 }

@@ -34,4 +34,18 @@ public class Vehiculo {
 		System.out.println(conductor.toString());
 	}//mostrarDatos
 	
+	
+	
+	public void Vehiculo (String matri, String tip, int velMax) {//si le quito el void
+		this.setMatricula(matri);								// constructor de camion y coche dan error
+		this.setTipo(tip);
+		this.setVelocidadMaxima(velMax);
+		
+	}//constructor
+	
+	public void Vehiculo () {
+		
+	}//constructor vacio
+	
+	
 }
