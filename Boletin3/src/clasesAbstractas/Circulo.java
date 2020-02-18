@@ -2,22 +2,25 @@ package clasesAbstractas;
 
 public class Circulo extends Figura{
 
-	private float radio;
-	//falta pi
-	public void setRadio (float radio) {
-		this.radio=radio;
-	}
+	private double radio;
+	private static double pi= Math.PI;
+
 	
 	
 	
+	//metodos
 	
 	
-	@Override
-	protected float calcularArea() {
-		float area=0;
+	
+	// constructor
+
+	public Circulo (double radio) {
+		this.radio = radio;
 		
-		
-		return area;
 	}
 
+
+
+
+	
 }

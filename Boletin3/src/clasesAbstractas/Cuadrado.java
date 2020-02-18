@@ -3,20 +3,18 @@ package clasesAbstractas;
 public class Cuadrado extends Figura{
 
 	//campos
-	private float lado;
+	private double lado;
 	
 	
-	public void setLado (float lado) {
-		this.lado=lado;
-	}
 	
+	//metodos
 	
-	@Override
-	protected float calcularArea() {
-		float area=0;
-		
-		
-		return area;
-	}
 
+	//constructor
+	
+	public Cuadrado (double lado) {
+		this.lado = lado;
+	}
+	
+	
 }

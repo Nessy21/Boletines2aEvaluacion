@@ -2,23 +2,19 @@ package clasesAbstractas;
 
 public class Triangulo extends Figura{
 
-	private float base;
-	private float altura;
+	private double base;
+	private double altura;
 	
-	public void setBase (float base) {
+	public void setBase (double base) {
 		this.base=base;
 	}
 	
-	public void setAltura (float altura) {
+	public void setAltura (double altura) {
 		this.altura=altura;
 	}
 	
-	@Override
-	protected float calcularArea() {
-		float area=0;
-		
-		
-		return area;
-	}
+	//metodos
+	
+	//constructores
 
 }
