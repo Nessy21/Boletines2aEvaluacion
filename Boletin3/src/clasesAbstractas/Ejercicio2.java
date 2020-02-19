@@ -50,7 +50,10 @@ public class Ejercicio2 {
 		
 		for(Figura Triangulo: arrayFiguras) {//para recorrer
 			System.out.println("lloro");//me imprime lloro por cada valor dentro del arrayFiguras.
-			//for each dentro del for? pero imprime 10 lloro por cada uno (100lloro?)	
+			
+			
+			//for each dentro del for? pero imprime 10 lloro por 
+			//cada uno (100lloro?)	
 				
 				
 		}
