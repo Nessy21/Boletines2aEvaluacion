@@ -1,6 +1,10 @@
 package clasesAbstractas;
 
-public class Cuadrado extends Figura{
+public class Cuadrado extends Rectangulo{
+
+	
+
+
 
 	//campos
 	private double lado;
@@ -9,11 +13,16 @@ public class Cuadrado extends Figura{
 	
 	//metodos
 	
+	@Override
+	protected void calcularArea() {
+		setArea(lado*lado);
 
+	}
 	//constructor
 	
-	public Cuadrado (double lado) {
-		this.lado = lado;
+	public Cuadrado(double lado) {
+		super(lado, lado); //constructor de cuadrado accediendo a Rectangulo mediante el super
+		
 	}
 	
 	

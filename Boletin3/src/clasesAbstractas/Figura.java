@@ -10,11 +10,13 @@ public abstract class Figura {
 	}
 	
 	//metodos
-	protected abstract double calcularArea();
+	protected abstract void calcularArea();
 	
 	
 	protected void imprimirArea() {
-		System.out.println ("El área es:" + area);
+		System.out.println ("El área es: " + area);
 	}
+
+
 	
 }
