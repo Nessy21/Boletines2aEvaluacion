@@ -11,12 +11,15 @@ public class Circulo extends Figura{
 	
 	//metodos
 	
-	@Override
 	protected void calcularArea() {
 		// TODO Auto-generated method stub
 		setArea(radio*radio*pi);
 	}
-
+	@Override
+	public String toString() {
+		String mensaje= "CÌrculo: \n\tRadio:"+radio+"\n\t¡rea:"+getArea();
+		return mensaje;
+	}
 
 	// constructor
 

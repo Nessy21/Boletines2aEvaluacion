@@ -15,12 +15,16 @@ public class Triangulo extends Figura{
 	
 	//metodos
 	
-	@Override
+
 	protected void calcularArea() {
-		// TODO Auto-generated method stub
 		setArea(altura*base);
 	}
 
+	@Override
+	public String toString() {
+		String mensaje= "Tri·ngulo: \n\tBase:"+base+"\n\tAltura:"+altura+"\n\t¡rea:"+getArea();
+		return mensaje;
+	}
 	//constructores
 	public Triangulo (double base, double altura) {
 		this.base=base;

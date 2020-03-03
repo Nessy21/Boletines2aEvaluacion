@@ -10,6 +10,11 @@ public class Rectangulo extends Figura {
 	protected void calcularArea() {
 		setArea(base*altura);
 	}
+	@Override
+	public String toString() {
+		String mensaje= "Rect·ngulo: \n\tBase:"+base+"\n\tAltura:"+altura+"\n\t¡rea:"+getArea();
+		return mensaje;
+	}
 	
 	//constructores
 	

@@ -8,7 +8,9 @@ public abstract class Figura {
 	public void setArea (double area) {
 		this.area=area;
 	}
-	
+	public double getArea() {
+		return area;
+	}
 	//metodos
 	protected abstract void calcularArea();
 	

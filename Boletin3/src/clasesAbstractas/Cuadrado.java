@@ -2,10 +2,6 @@ package clasesAbstractas;
 
 public class Cuadrado extends Rectangulo{
 
-	
-
-
-
 	//campos
 	private double lado;
 	
@@ -13,10 +9,15 @@ public class Cuadrado extends Rectangulo{
 	
 	//metodos
 	
-	@Override
+	
 	protected void calcularArea() {
 		setArea(lado*lado);
 
+	}
+	@Override
+	public String toString() {
+		String mensaje= "Cuadrado: \n\tLado:"+lado+"\n\t¡rea:"+getArea();
+		return mensaje;
 	}
 	//constructor
 	

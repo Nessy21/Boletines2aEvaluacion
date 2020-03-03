@@ -5,19 +5,19 @@ public class Ejercicio2 {
 	public static void main(String[] args) {
 		Circulo c1= new Circulo (2);
 		c1.calcularArea();
-		c1.imprimirArea();
+		//c1.imprimirArea();
 		
 		Cuadrado cua1= new Cuadrado (5);//por el constructor de Rectangulo
 		cua1.calcularArea();
-		cua1.imprimirArea();
+		//cua1.imprimirArea();
 		
 		Triangulo t1 = new Triangulo (4, 2);
 		t1.calcularArea();
-		t1.imprimirArea();
+		//t1.imprimirArea();
 		
 		Rectangulo r1 = new Rectangulo (9,2);
 		r1.calcularArea();
-		r1.imprimirArea();
+		//r1.imprimirArea();
 		
 		//Apartado 5
 		Figura [] arrayFiguras = {
@@ -39,23 +39,57 @@ public class Ejercicio2 {
 			Triangulo [] triangulos = new Triangulo [3];
 			Cuadrado [] cuadrados = new Cuadrado [2];
 			Rectangulo [] rectangulos = new Rectangulo [3];
-			Circulo [] circulos = new Circulo [2];//no enlaza? 
+			Circulo [] circulos = new Circulo [2];
 			
+			//instanceof mirar que clase de figura es 
+	
+			int insTriangulo=0;
+			int insCuadrado=0;
+			int insRectangulo=0;
+			int insCirculo=0;
+		
+		for(Figura f: arrayFiguras) {//para recorrer
 			
-			//guardar cada elemento en un array 
-		for (int i=0; i<arrayFiguras.length;i++) {
+				f.calcularArea();
+				//guarda cada figura en su sitio
+			if (f instanceof Triangulo) {
+				triangulos [insTriangulo]= (Triangulo) f;
+				insTriangulo++;
+			}
+			else if (f instanceof Cuadrado) {
+				cuadrados [insCuadrado]= (Cuadrado) f;
+				insCuadrado++;
+			}
 			
+			else if (f instanceof Rectangulo) {
+				rectangulos [insRectangulo]= (Rectangulo) f;
+				insRectangulo++;
+			}
+			else if (f instanceof Circulo) {
+				circulos [insCirculo]= (Circulo) f;
+				insCirculo++;
+			}
+		}//for each
+		
+		System.out.println("Impresion de Triángulos");//recorre cada triangulo e imprime sus datos
+		for (int i = 0 ; i<triangulos.length; i++) {
+			Triangulo t=triangulos [i];
+			System.out.println(t);
 		}
-		
-		
-		for(Figura Triangulo: arrayFiguras) {//para recorrer
-			System.out.println("lloro");//me imprime lloro por cada valor dentro del arrayFiguras.
-			
-			
-			//for each dentro del for? pero imprime 10 lloro por 
-			//cada uno (100lloro?)	
-				
-				
+		System.out.println("Impresión de Cuadrados");
+		for (int i = 0 ; i<cuadrados.length; i++) {
+			Cuadrado c=cuadrados [i];
+			System.out.println(c);
+		}
+		System.out.println("Impresión de Rectángulos");
+		for (int i = 0 ; i<rectangulos.length; i++) {
+			Rectangulo r=rectangulos [i];
+			System.out.println(r);
+		}
+		System.out.println("Impresión de Círculos");
+		for (int i = 0 ; i<circulos.length; i++) {
+			Circulo c=circulos [i];
+			System.out.println(c);
 		}
 		
 		}
