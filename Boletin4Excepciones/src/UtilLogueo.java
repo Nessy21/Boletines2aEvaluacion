@@ -30,30 +30,12 @@ public class UtilLogueo {
 					}
 					else {//excepcion
 						throw new UserIncorrectoException("Usuario inexistente");
-					}
-					
+					}	
 				}
 				else {//excepcion
 					throw new ConstraseñaIncorrectaException("Contraseña o usuario incorrecto");
 				}
-			
-			
-					
-				
 			}//for
-			
-	
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
 		return null;
 		
 	} 	//
