@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class UtilLogueo {
  
@@ -18,39 +17,26 @@ public class UtilLogueo {
 		
 		//excepciones aqui
 
-
-
-			for (int i=0; i<arrayUsuarios.length;i++) {
-				
-				arrayUsuarios[i].getNombreUsuario(usuario);//kk
-				if(usuario.equals(usuario)) {
-					arrayUsuarios[i].getNombrePassword(password);//kk
-					if(password.equals(password)) {
-						System.out.println("PERFECTO");
+		for (int i = 0; i < arrayUsuarios.length; i++) {
+			 
+		
+			String a=arrayUsuarios[i].getNombreUsuario(usuario);//asi no 
+																//hace nada
+			if (a.equals(usuario)) {
+			String b= arrayUsuarios[i].getNombrePassword(password);
+				if (b.equals(password)) {
+					System.out.println("Inicio correcto");
 					}
-					else {//excepcion
+				else {//Exception
 						throw new LoginUsuarioNoExistente ("Usuario inexistente");
 					}	
 				}
-				else {//excepcion
-					throw new ConstraseñaIncorrectaException("Contraseña o usuario incorrecto");
+			else {//Exception
+					throw new LoginUsuarioPassErroneo("Contraseña o usuario incorrecto");
 				}
 			}//for
 		return null;
-		//
-	} 	//
-	public static void main(String[] args) {
-		String usuario;
-		String password;
-		System.out.println("Introduce el usuario");
-		Scanner sc= new Scanner (System.in);
-			usuario=sc.next();
-		System.out.println("Introduce la contraseña");
-			password=sc.next();
-		realizarLogin(usuario, password);
-			//try catch aqui
-			
-		sc.close();
-	}
-	
+		
+	} 	
+
 }

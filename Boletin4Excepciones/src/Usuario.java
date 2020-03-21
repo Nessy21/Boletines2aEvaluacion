@@ -7,14 +7,14 @@ public class Usuario{
 
 	public Usuario (String nombre, String password) {}
 
-	public void getNombreUsuario(String usuario) {
-		usuario=nombre;
+	public String getNombreUsuario(String usuario) {
+		return usuario=nombre;
 		
 		
 	}
 
-	public void getNombrePassword(String password2) {
-		this.password=password;
+	public String getNombrePassword(String password) {
+		return this.password=password;
 		
 	}
 

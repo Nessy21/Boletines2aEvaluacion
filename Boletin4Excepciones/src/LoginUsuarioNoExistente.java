@@ -1,5 +1,5 @@
 
-public class LoginUsuarioNoExistente  extends IllegalArgumentException{
+public class LoginUsuarioNoExistente  extends NullPointerException{
 	public LoginUsuarioNoExistente  (String mensaje) {
 		super(mensaje);
 	}
