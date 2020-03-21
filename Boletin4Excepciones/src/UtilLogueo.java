@@ -18,7 +18,7 @@ public class UtilLogueo {
 		
 		//excepciones aqui
 
-		
+
 
 			for (int i=0; i<arrayUsuarios.length;i++) {
 				
@@ -29,7 +29,7 @@ public class UtilLogueo {
 						System.out.println("PERFECTO");
 					}
 					else {//excepcion
-						throw new UserIncorrectoException("Usuario inexistente");
+						throw new LoginUsuarioNoExistente ("Usuario inexistente");
 					}	
 				}
 				else {//excepcion

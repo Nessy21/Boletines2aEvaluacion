@@ -1,6 +1,6 @@
 
-public class UserIncorrectoException extends IllegalArgumentException{
-	public UserIncorrectoException (String mensaje) {
+public class LoginUsuarioNoExistente  extends IllegalArgumentException{
+	public LoginUsuarioNoExistente  (String mensaje) {
 		super(mensaje);
 	}
 
